@@ -4,18 +4,18 @@ from setuptools import setup, find_packages
 from treeadmin import __version__ as version
 
 setup(
-    name = 'django-treeadmin',
+    name = 'django-treeadmin-fork-alt-storage',
     version = version,
-    description = 'Tree UI for mptt-managed models, extracted from FeinCMS',
+    description = 'Tree UI for mptt-managed models, extracted from FeinCMS. This is a fork with support for alternative storage engines',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst')).read(),
     author = 'Matthias Kestenholz  et al.',
     author_email = 'mk@spinlock.ch',
-    url = 'https://www.github.com/piquadrat/django-treeadmin',
+    url = 'https://www.github.com/KristianOellegaard/django-treeadmin',
     packages = find_packages(),
     zip_safe=False,
     include_package_data = True,
     install_requires=[
-        'Django>=1.2',
+        'Django>=1.4',
         'django-mptt>=0.5',
     ],
     classifiers = [
